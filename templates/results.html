@@ -1,0 +1,15 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Results</title>
+</head>
+<body>
+  <h2>Voting Results</h2>
+  <ul>
+    {% for candidate, count in results %}
+      <li>{{ candidate }}: {{ count }} votes</li>
+    {% endfor %}
+  </ul>
+</body>
+</html>

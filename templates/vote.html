@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vote</title>
+</head>
+<body>
+  <h2>Select your captain</h2>
+  <form method="post">
+    {% for candidate in candidates %}
+      <input type="radio" name="candidate" value="{{ candidate }}" required> {{ candidate }}<br>
+    {% endfor %}
+    <button type="submit">Vote</button>
+  </form>
+</body>
+</html>
